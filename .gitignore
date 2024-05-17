@@ -1,6 +1,7 @@
 .project
 /.idea
 /bin
+/out
 *.iml
 *.code-workspace
 .vscode
