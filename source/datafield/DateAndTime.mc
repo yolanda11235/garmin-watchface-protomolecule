@@ -77,6 +77,8 @@ class DateAndTime extends WatchUi.Drawable {
     dc.drawText(hoursX, hoursY, Settings.resource(Rez.Fonts.HoursFont), hours, Graphics.TEXT_JUSTIFY_RIGHT);
     // Minutes
     dc.drawText(minutesX, minutesY, Settings.resource(Rez.Fonts.MinutesFont), minutes, Graphics.TEXT_JUSTIFY_LEFT);
+    // ":"
+    dc.drawText((hoursX+minutesX)/2, hoursY, Settings.resource(Rez.Fonts.HoursFont), ":", Graphics.TEXT_JUSTIFY_CENTER);
 
     if (is12Hour && Settings.get("showMeridiemText")) {
       var meridiem = (now.hour < 12) ? "am" : "pm";
