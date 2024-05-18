@@ -11,7 +11,7 @@
   <property id="useSystemFontForDate" type="boolean">false</property>
   <property id="showSeconds" type="boolean">true</property>
   
-  <property id="noProgressDataField1" type="number">14</property>
+  <property id="noProgressDataField1" type="number">13</property>
   <property id="noProgressDataField2" type="number">5</property>
   <property id="noProgressDataField3" type="number">2</property>
   

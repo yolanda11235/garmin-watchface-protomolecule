@@ -9,11 +9,11 @@
   <string id="LayoutCirclesItemSub">8 Datenfelder</string>
 
   <string id="ThemeExpanse">Expanse</string>
-  <string id="ThemeEarth">UN</string>
-  <string id="ThemeMars">MCR</string>
+  <string id="ThemeEarth">Earth</string>
+  <string id="ThemeMars">Mars</string>
   <string id="ThemeBelt">Belt</string>
   <string id="ThemeExpanseLight">Expanse (Hell)</string>
-  <string id="ThemeEarthLight">UN (Hell)</string>
+  <string id="ThemeEarthLight">Earth (Hell)</string>
 
   <string id="GenericSettingsGroupTitle">Allgemeine Einstellungen</string>
   <string id="SettingsLayoutTitle">Layout</string>

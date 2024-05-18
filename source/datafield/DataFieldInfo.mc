@@ -52,8 +52,8 @@ module FieldType {
   const ALARMS = 10;
   const BODY_BATTERY = 11;
   const SECONDS = 12;
-  const STRESS_LEVEL = 13;
-  const RECOVERY_TIME = 14;
+  const STRESS_LEVEL = 14;
+  const RECOVERY_TIME = 13;
 }
 
 module DataFieldInfo {

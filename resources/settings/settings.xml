@@ -55,8 +55,8 @@
       <listEntry value="9">@Strings.DataFieldBluetooth</listEntry>
       <listEntry value="10">@Strings.DataFieldAlarms</listEntry>
       <listEntry value="11">@Strings.DataFieldBodyBattery</listEntry>
-      <listEntry value="13">@Strings.DataFieldStressLevel</listEntry>
-      <listEntry value="14">@Strings.DataFieldRecoveryTime</listEntry>
+      <listEntry value="13">@Strings.DataFieldRecoveryTime</listEntry>
+      <listEntry value="14">@Strings.DataFieldStressLevel</listEntry>
     </settingConfig>
   </setting>
   
@@ -72,8 +72,8 @@
       <listEntry value="9">@Strings.DataFieldBluetooth</listEntry>
       <listEntry value="10">@Strings.DataFieldAlarms</listEntry>
       <listEntry value="11">@Strings.DataFieldBodyBattery</listEntry>
-      <listEntry value="13">@Strings.DataFieldStressLevel</listEntry>
-      <listEntry value="14">@Strings.DataFieldRecoveryTime</listEntry>
+      <listEntry value="13">@Strings.DataFieldRecoveryTime</listEntry>
+      <listEntry value="14">@Strings.DataFieldStressLevel</listEntry>
     </settingConfig>
   </setting>
   
@@ -89,8 +89,8 @@
       <listEntry value="9">@Strings.DataFieldBluetooth</listEntry>
       <listEntry value="10">@Strings.DataFieldAlarms</listEntry>
       <listEntry value="11">@Strings.DataFieldBodyBattery</listEntry>
-      <listEntry value="13">@Strings.DataFieldStressLevel</listEntry>
-      <listEntry value="14">@Strings.DataFieldRecoveryTime</listEntry>
+      <listEntry value="13">@Strings.DataFieldRecoveryTime</listEntry>
+      <listEntry value="14">@Strings.DataFieldStressLevel</listEntry>
     </settingConfig>
   </setting>
   <setting propertyKey="@Properties.showOrbitIndicatorText" title="@Strings.SettingsOrbitIndicatorTextTitle">
