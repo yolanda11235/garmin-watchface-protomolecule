@@ -100,7 +100,8 @@ module Settings {
       Rez.Strings.DataFieldAlarms,
       Rez.Strings.DataFieldBodyBattery,
       Rez.Strings.DataFieldSeconds,
-      Rez.Strings.DataFieldStressLevel
+      Rez.Strings.DataFieldStressLevel,
+      Rez.Strings.DataFieldRecoveryTime
     ];
   }
 

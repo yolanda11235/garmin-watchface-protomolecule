@@ -89,6 +89,7 @@
   <string id="DataFieldSeconds">Sekunden</string>
   <string id="DataFieldBodyBattery">Körperbatterie</string>
   <string id="DataFieldStressLevel">Stresslevel</string>
+  <string id="DataFieldRecoveryTime">Recovery Time</string>
 
   <string id="DateMonth1">Jan</string>
   <string id="DateMonth2">Feb</string>

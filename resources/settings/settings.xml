@@ -56,6 +56,7 @@
       <listEntry value="10">@Strings.DataFieldAlarms</listEntry>
       <listEntry value="11">@Strings.DataFieldBodyBattery</listEntry>
       <listEntry value="13">@Strings.DataFieldStressLevel</listEntry>
+      <listEntry value="14">@Strings.DataFieldRecoveryTime</listEntry>
     </settingConfig>
   </setting>
   
@@ -72,6 +73,7 @@
       <listEntry value="10">@Strings.DataFieldAlarms</listEntry>
       <listEntry value="11">@Strings.DataFieldBodyBattery</listEntry>
       <listEntry value="13">@Strings.DataFieldStressLevel</listEntry>
+      <listEntry value="14">@Strings.DataFieldRecoveryTime</listEntry>
     </settingConfig>
   </setting>
   
@@ -88,6 +90,7 @@
       <listEntry value="10">@Strings.DataFieldAlarms</listEntry>
       <listEntry value="11">@Strings.DataFieldBodyBattery</listEntry>
       <listEntry value="13">@Strings.DataFieldStressLevel</listEntry>
+      <listEntry value="14">@Strings.DataFieldRecoveryTime</listEntry>
     </settingConfig>
   </setting>
   <setting propertyKey="@Properties.showOrbitIndicatorText" title="@Strings.SettingsOrbitIndicatorTextTitle">

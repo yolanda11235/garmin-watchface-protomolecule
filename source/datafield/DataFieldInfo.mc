@@ -53,6 +53,7 @@ module FieldType {
   const BODY_BATTERY = 11;
   const SECONDS = 12;
   const STRESS_LEVEL = 13;
+  const RECOVERY_TIME = 14;
 }
 
 module DataFieldInfo {
@@ -138,6 +139,8 @@ module DataFieldInfo {
       return getBodyBatteryInfo();
     } else if (fieldType == FieldType.STRESS_LEVEL) {
       return getStressLevelInfo();
+    } else if (fieldType == FieldType.RECOVERY_TIME) {
+      return getRecoveryTimeInfo();
     } else {
       return null;
     }
@@ -299,5 +302,21 @@ module DataFieldInfo {
     var progress = stressLevel / 100.0;
     
     return new DataFieldProperties(fId, iconCallback, bbFmt, progress, true);
+  }
+
+  function getRecoveryTimeInfo() as DataFieldProperties {
+
+    var activityInfo = ActivityMonitor.getInfo();
+    var recoveryTime = activityInfo.timeToRecovery;
+
+    if (recoveryTime == null) {
+      recoveryTime = 0;
+    }
+    var fId = FieldType.RECOVERY_TIME;
+    var iconCallback = new Lang.Method(DataFieldIcons, :drawRecoveryTime);
+    var bbFmt = recoveryTime.format(Format.INT);
+    var progress = recoveryTime / 100.0;
+    
+    return new DataFieldProperties(fId, iconCallback, bbFmt, progress, false);
   }
 }
