@@ -54,7 +54,7 @@ class SecondaryDataField extends DataFieldDrawable {
 
   function setClippingRegion(dc, offset, penSize) {
     var contentDimensions = getDimensions(dc);
-    dc.setColor(themeColor(Color.TEXT_ACTIVE), themeColor(Color.BACKGROUND));
+    dc.setColor(themeColor(Color.TEXT_ACTIVE), Graphics.COLOR_TRANSPARENT);
     dc.setClip(
       locX - offset,
       locY - contentDimensions[1] / 2 - penSize / 2,
