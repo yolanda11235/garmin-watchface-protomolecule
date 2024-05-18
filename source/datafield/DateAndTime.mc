@@ -43,7 +43,7 @@ class DateAndTime extends WatchUi.Drawable {
   }
 
   function draw(dc) {
-    var is12Hour = !System.getDeviceSettings().is24Hour;
+    var is12Hour = false; //!System.getDeviceSettings().is24Hour;
     var now = Time.Gregorian.info(Time.now(), Settings.get("useSystemFontForDate") ? Time.FORMAT_MEDIUM : Time.FORMAT_SHORT);
     var date = getDateLine(now);
     var hours = getHours(now, is12Hour);

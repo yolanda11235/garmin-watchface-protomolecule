@@ -123,15 +123,15 @@ module Settings {
 
   function loadProperties() {
     setAsNumber("layout", 0);
-    setAsNumber("theme", 0);
+    setAsNumber("theme", 1);
     setAsNumber("caloriesGoal", 2000);
     setAsNumber("batteryThreshold", 20);
     setAsBoolean("activeHeartrate", false);
-    setAsBoolean("showOrbitIndicatorText", false);
+    setAsBoolean("showOrbitIndicatorText", true);
     setAsBoolean("showMeridiemText", false);
     setAsBoolean("sleepLayoutActive", false);
     setAsBoolean("useSystemFontForDate", false);
-    setAsBoolean("showSeconds", false);
+    setAsBoolean("showSeconds", true);
     
     _settings["middle1"] = Properties.getValue("noProgressDataField1");
     _settings["middle2"] = Properties.getValue("noProgressDataField2");
