@@ -8,7 +8,7 @@
   <drawable id="NoProgressDataField1" class="SecondaryDataField">
     <param name="fieldId">FieldId.NO_PROGRESS_1</param>
     <param name="offsetModifier">0</param>
-    <param name="x">0.32 * dc.getWidth()</param>
+    <param name="x">0.29 * dc.getWidth()</param>
     <param name="y">0.7 * dc.getHeight()</param>
   </drawable>
   <!-- <drawable id="NoProgressDataField2" class="SecondaryDataField">
@@ -20,7 +20,7 @@
   <drawable id="NoProgressDataField3" class="SecondaryDataField">
     <param name="fieldId">FieldId.NO_PROGRESS_3</param>
     <param name="offsetModifier">1</param>
-    <param name="x">0.68 * dc.getWidth()</param>
+    <param name="x">0.71 * dc.getWidth()</param>
     <param name="y">0.7 * dc.getHeight()</param>
   </drawable>
 
