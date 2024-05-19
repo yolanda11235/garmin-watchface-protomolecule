@@ -99,12 +99,13 @@ class OrbitDataField extends DataFieldDrawable {
     } else {
       dc.setColor(getForeground(), Graphics.COLOR_TRANSPARENT);
     }
-    var x = (mFieldId == FieldId.ORBIT_LEFT) ? getX(dc, mStartDegree - mTotalDegree) - (Settings.get("iconSize") / 2) : getX(dc, mStartDegree) + (Settings.get("iconSize") / 2);
-    var y = ((mFieldId == FieldId.ORBIT_LEFT) ? getY(dc, mStartDegree - mTotalDegree) : getY(dc, mStartDegree)) + Settings.get("iconSize");
+    var fieldWidth = dc.getTextWidthInPixels(mLastInfo.text, Settings.resource(Rez.Fonts.SecondaryIndicatorFont)) + Settings.get("iconSize");
+    var x = (mFieldId == FieldId.ORBIT_LEFT) ? Settings.get("centerXPos") - fieldWidth/2 + Settings.get("iconSize")/2: getX(dc, mStartDegree) + (Settings.get("iconSize") / 2);
+    var y = ((mFieldId == FieldId.ORBIT_LEFT) ? Settings.get("centerYPos") - mRadius +5 : getY(dc, mStartDegree)) + Settings.get("iconSize");
 
     if (mFieldId == FieldId.ORBIT_OUTER) {
-      x = Settings.get("centerXPos");
-      y = Settings.get("centerYPos") + mRadius - Settings.get("iconSize") * (Settings.get("showOrbitIndicatorText") ? 2 : 1); 
+      x = Settings.get("centerXPos")- fieldWidth/2 + Settings.get("iconSize")/2;
+      y = Settings.get("centerYPos") + mRadius - Settings.get("iconSize") -5; 
     }
 
     mLastInfo.icon.invoke(
@@ -116,13 +117,13 @@ class OrbitDataField extends DataFieldDrawable {
       mLastInfo.text
     );
     if (Settings.get("showOrbitIndicatorText")) {
-      y += Settings.get("iconSize");
+      x += Settings.get("iconSize")/2 + Settings.get("strokeWidth");
       dc.drawText(
         x,
-        y - 1,
+        y - 4,
         Settings.resource(Rez.Fonts.SecondaryIndicatorFont),
         mLastInfo.text,
-        Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
       );
     }
   }

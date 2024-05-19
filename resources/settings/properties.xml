@@ -22,6 +22,6 @@
   <property id="lowerDataField2" type="number">7</property>
 
   <property id="outerOrbitDataField" type="number">1</property>
-  <property id="leftOrbitDataField" type="number">11</property>
-  <property id="rightOrbitDataField" type="number">4</property>
+  <property id="leftOrbitDataField" type="number">4</property>
+  <property id="rightOrbitDataField" type="number">11</property>
 </properties>

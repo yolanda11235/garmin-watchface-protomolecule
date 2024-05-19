@@ -26,22 +26,22 @@
 
   <drawable id="OuterDataField" class="OrbitDataField">
     <param name="fieldId">FieldId.ORBIT_OUTER</param>
-    <param name="startDegree">270</param>
+    <param name="startDegree">90</param>
     <param name="totalDegree">360</param>
     <param name="radius">dc.getWidth() / 2.0 * 0.96</param>
   </drawable>
 
   <drawable id="UpperDataField1" class="OrbitDataField">
     <param name="fieldId">FieldId.ORBIT_LEFT</param>
-    <param name="startDegree">248</param>
-    <param name="totalDegree">150</param>
-    <param name="radius">dc.getWidth() / 2.0 * 0.89</param>
+    <param name="startDegree">225</param>
+    <param name="totalDegree">180</param>
+    <param name="radius">dc.getWidth() / 2.0 * 0.87</param>
   </drawable>
 
-  <drawable id="UpperDataField2" class="OrbitDataField">
+  <!-- <drawable id="UpperDataField2" class="OrbitDataField">
     <param name="fieldId">FieldId.ORBIT_RIGHT</param>
-    <param name="startDegree">82</param>
+    <param name="startDegree">23</param>
     <param name="totalDegree">150</param>
     <param name="radius">dc.getWidth() / 2.0 * 0.89</param>
-  </drawable>
+  </drawable> -->
 </layout> 
