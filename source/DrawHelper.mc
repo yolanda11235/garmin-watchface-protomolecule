@@ -27,9 +27,9 @@ module Color {
     /* EARTH */
       Graphics.COLOR_WHITE,   // TEXT_ACTIVE
       Graphics.COLOR_LT_GRAY, // TEXT_INACTIVE
-      Graphics.COLOR_BLUE,               // PRIMARY
-      0x0055aa,    // SECONDARY_1
-      0x0055aa,    // SECONDARY_2
+      0xD7B377,               // PRIMARY
+      0x00BBDD,               // SECONDARY_1
+      0x00BBDD,               // SECONDARY_2
       Graphics.COLOR_BLACK,   // BACKGROUND
       Graphics.COLOR_WHITE,   // FOREGROUND
       Graphics.COLOR_DK_GRAY, // INACTIVE
