@@ -54,11 +54,11 @@ class DateAndTime extends WatchUi.Drawable {
     var dateY = dc.getHeight() * 0.31 - dateDim[1] / 2.0;
 
     var hoursDim = dc.getTextDimensions(hours, Settings.resource(Rez.Fonts.HoursFont));
-    var hoursX = dc.getWidth() * 0.485;
+    var hoursX = dc.getWidth() * 0.48;
     var hoursY = dc.getHeight() * 0.48 - hoursDim[1] / 2.0;
 
     var minutesDim = dc.getTextDimensions(minutes, Settings.resource(Rez.Fonts.MinutesFont));
-    var minutesX = dc.getWidth() * 0.515;
+    var minutesX = dc.getWidth() * 0.52;
     var minutesY = dc.getHeight() * 0.48 - minutesDim[1] / 2.0;
 
     var offset = 0;
