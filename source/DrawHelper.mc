@@ -25,13 +25,13 @@ module Color {
       Graphics.COLOR_WHITE,   // FOREGROUND
       Graphics.COLOR_DK_GRAY, // INACTIVE,
     /* EARTH */
-      Graphics.COLOR_WHITE,   // TEXT_ACTIVE
-      Graphics.COLOR_LT_GRAY, // TEXT_INACTIVE
+      0xC0C0C0,               // TEXT_ACTIVE
+      Graphics.COLOR_DK_GRAY, // TEXT_INACTIVE
       0xD7B377,               // PRIMARY
       0x00BBDD,               // SECONDARY_1
       0x00BBDD,               // SECONDARY_2
       Graphics.COLOR_BLACK,   // BACKGROUND
-      Graphics.COLOR_WHITE,   // FOREGROUND
+      0xC0C0C0,               // FOREGROUND
       Graphics.COLOR_DK_GRAY, // INACTIVE
     /* MARS */
       Graphics.COLOR_WHITE,   // TEXT_ACTIVE

@@ -91,24 +91,24 @@
   <string id="DataFieldStressLevel">Stresslevel</string>
   <string id="DataFieldRecoveryTime">Recovery Time</string>
 
-  <string id="DateMonth1">Jan</string>
-  <string id="DateMonth2">Feb</string>
-  <string id="DateMonth3">Mar</string>
-  <string id="DateMonth4">Apr</string>
-  <string id="DateMonth5">Mai</string>
-  <string id="DateMonth6">Jun</string>
-  <string id="DateMonth7">Jul</string>
-  <string id="DateMonth8">Aug</string>
-  <string id="DateMonth9">Sept</string>
-  <string id="DateMonth10">Okt</string>
-  <string id="DateMonth11">Nov</string>
-  <string id="DateMonth12">Dez</string>
+  <string id="DateMonth1">JAN</string>
+  <string id="DateMonth2">FEB</string>
+  <string id="DateMonth3">MAR</string>
+  <string id="DateMonth4">APR</string>
+  <string id="DateMonth5">MAI</string>
+  <string id="DateMonth6">JUN</string>
+  <string id="DateMonth7">JUL</string>
+  <string id="DateMonth8">AUG</string>
+  <string id="DateMonth9">SEP</string>
+  <string id="DateMonth10">OKT</string>
+  <string id="DateMonth11">NOV</string>
+  <string id="DateMonth12">DEZ</string>
 
-  <string id="DateWeek1">So</string>
-  <string id="DateWeek2">Mo</string>
-  <string id="DateWeek3">Di</string>
-  <string id="DateWeek4">Mi</string>
-  <string id="DateWeek5">Do</string>
-  <string id="DateWeek6">Fr</string>
-  <string id="DateWeek7">Sa</string>
+  <string id="DateWeek1">SO</string>
+  <string id="DateWeek2">MO</string>
+  <string id="DateWeek3">DI</string>
+  <string id="DateWeek4">MI</string>
+  <string id="DateWeek5">DO</string>
+  <string id="DateWeek6">FR</string>
+  <string id="DateWeek7">SA</string>
 </strings>

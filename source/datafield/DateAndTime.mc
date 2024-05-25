@@ -63,13 +63,13 @@ class DateAndTime extends WatchUi.Drawable {
 
     var offset = 0;
     if (mBurnInProtectionMode) {
-      offset = calculateOffset(dc, now.min % 5, dateY, hoursY + hoursDim[1]);
+      //offset = calculateOffset(dc, now.min % 5, dateY, hoursY + hoursDim[1]);
       dateY += offset;
       hoursY += offset;
       minutesY += offset;
     }
 
-    dc.setColor((mBurnInProtectionMode ? Graphics.COLOR_WHITE : themeColor(Color.FOREGROUND)), Graphics.COLOR_TRANSPARENT);
+    dc.setColor(themeColor(Color.FOREGROUND), Graphics.COLOR_TRANSPARENT);
     
     // Date
     dc.drawText(dateX, dateY, Settings.get("useSystemFontForDate") ? Graphics.FONT_TINY : Settings.resource(Rez.Fonts.DateFont), date, Graphics.TEXT_JUSTIFY_CENTER);
