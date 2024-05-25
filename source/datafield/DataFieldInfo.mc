@@ -36,6 +36,7 @@ module FieldId {
   const SLEEP_ALARMS = 13;
   const SLEEP_NOTIFY = 14;
   const DATE_AND_TIME = 15;
+  const MOVE_BAR = 16;
 }
 
 module FieldType {
@@ -54,6 +55,7 @@ module FieldType {
   const SECONDS = 12;
   const STRESS_LEVEL = 14;
   const RECOVERY_TIME = 13;
+  const MOVE_BAR_LEVEL = 15;
 }
 
 module DataFieldInfo {
@@ -109,6 +111,8 @@ module DataFieldInfo {
       return getBatteryInfo();
     } else if (fieldId == FieldId.DATE_AND_TIME) {
       return getSecondsInfo();
+    } else if (fieldId == FieldId.MOVE_BAR) {
+      return getMoveBarLevel();
     } else {
       return null;
     }
@@ -306,8 +310,7 @@ module DataFieldInfo {
 
   function getRecoveryTimeInfo() as DataFieldProperties {
 
-    var activityInfo = ActivityMonitor.getInfo();
-    var recoveryTime = activityInfo.timeToRecovery;
+    var recoveryTime = ActivityMonitor.getInfo().timeToRecovery;
 
     if (recoveryTime == null) {
       recoveryTime = 0;
@@ -315,8 +318,39 @@ module DataFieldInfo {
     var fId = FieldType.RECOVERY_TIME;
     var iconCallback = new Lang.Method(DataFieldIcons, :drawRecoveryTime);
     var bbFmt = recoveryTime.format(Format.INT);
-    var progress = recoveryTime / 100.0;
     
+    return new DataFieldProperties(fId, iconCallback, bbFmt, 0, false);
+  }
+
+  function getMoveBarLevel() as DataFieldProperties {
+    var moveBarLevel = ActivityMonitor.getInfo().moveBarLevel;
+
+    if (moveBarLevel == null) {
+      moveBarLevel = 0;
+    }
+    var fId = FieldType.MOVE_BAR_LEVEL;
+    var iconCallback = new Lang.Method(DataFieldIcons, :drawRecoveryTime);
+    var bbFmt = moveBarLevel.format(Format.INT);
+
+    var progress = 0;
+    switch (moveBarLevel) {
+      case 1:
+        progress = 0.5;
+        break;
+      case 2:
+        progress = 0.625;
+        break;
+      case 3:
+        progress = 0.75;
+        break;
+      case 4:
+        progress = 0.875;
+        break;
+      case 5:
+        progress = 1.0;
+        break;
+    }
+
     return new DataFieldProperties(fId, iconCallback, bbFmt, progress, false);
   }
 }

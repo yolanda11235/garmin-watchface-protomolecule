@@ -44,4 +44,13 @@
     <param name="totalDegree">150</param>
     <param name="radius">dc.getWidth() / 2.0 * 0.89</param>
   </drawable> -->
+  
+  <drawable id="MoveBarField" class="ProgressBarDataField">
+    <param name="fieldId">FieldId.MOVE_BAR</param>
+    <param name="showIcon">false</param>
+    <param name="x">0.28 * dc.getWidth()</param>
+    <param name="y">0.8 * dc.getHeight()</param>
+    <param name="width">0.5 * dc.getWidth()</param>
+  </drawable>
+
 </layout> 
